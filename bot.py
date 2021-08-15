@@ -29,7 +29,7 @@ async def on_member_join(member):
     await channel.send(f'Welcome to {client.guilds.name}, {member.name}.')
 
 @client.command(pass_context=True)
-async def periodt(ctx):
+async def p(ctx):
     if ctx.author.voice:
         channel = ctx.message.author.voice.channel
         voice = await channel.connect()
