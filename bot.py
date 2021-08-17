@@ -32,7 +32,7 @@ async def p(ctx):
     channel = ctx.message.author.voice.channel
     voice = await channel.connect()
     if song_there:
-        source = FFmpegPCMAudio("song.mp3")
+        source = discord.FFmpegPCMAudio("song.mp3")
         player = voice.play(source)
         while True:
             await asyncio.sleep(2)
