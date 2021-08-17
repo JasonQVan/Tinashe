@@ -3,3 +3,5 @@ python-dotenv
 asyncio
 PyNaCl
 youtube_dl
+wheel
+ffmpeg
