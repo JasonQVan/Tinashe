@@ -35,7 +35,7 @@ async def p(ctx):
         source = discord.FFmpegPCMAudio("song.mp3")
         player = voice.play(source)
         while True:
-            await asyncio.sleep(2)
+            await asyncio.sleep(1)
             if voice.is_playing() == False:
                 await voice.disconnect()
                 break
